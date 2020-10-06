@@ -1,4 +1,4 @@
 # CAA-Data-Analysis-Project
 
-$Files not uploaded:$
+$Files not uploaded:
 - CADS/Clicks/Clickers_Gift.csv
