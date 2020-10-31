@@ -5,3 +5,6 @@ Files not uploaded:
 - CADS/Opens/Openers_Gift.csv
 - CADS/Subs/Subscribers_Entity
 - CADS/Subs/Subscribers_Gift
+
+
+Please upload findings/research inside the data analysis file
