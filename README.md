@@ -7,4 +7,4 @@ Files not uploaded:
 - CADS/Subs/Subscribers_Gift
 
 
-Please upload findings/research inside the data analysis file
+Please upload findings/research inside the data analysis folder
