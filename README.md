@@ -70,6 +70,13 @@ for j in sig_results:
   else:
     to_add.append('no')
 ``` 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
 
 ---
 Please put results with visualization under this file
