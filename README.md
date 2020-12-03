@@ -46,6 +46,7 @@ After conducting a monthly breakdown of the opens-to-clisks conversion rate, it 
 ## Age vs Activity Participation Rate
 
 *Add graph/visualization later*
+
 We divided subscribers into three groups -- young, mid, and old -- based the CAA membership type as well as looking at the distribution of ages and dividing them accordingly:
 
 | Group       | Birth year range  |
