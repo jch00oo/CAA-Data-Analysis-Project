@@ -64,7 +64,7 @@ for i in newsletters:
   print("[*] Total URLs extracted:", len(urls))
 ```
 
-The scatterplot included below represents the relationship between number of links in a newsletter and total number of clicks recorded for that newsletter. There does seems †o be a positive relationship between total number of links clicked and URLS included; for every additional URL included, we can expect about 117 more clicks for a newsletter.
+The scatterplot included below represents the relationship between number of links in a newsletter and total number of clicks recorded for that newsletter. There does seems †o be a positive relationship between total number of links clicked and URLS included; for every additional URL included, we can expect about 3.5 more clicks for a newsletter.
 
 ![Screen Shot 2020-12-03 at 3 18 08 PM](https://user-images.githubusercontent.com/70298391/101100108-cc9c2700-357a-11eb-84c9-66256490a7af.png)
 
