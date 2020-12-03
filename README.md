@@ -51,9 +51,21 @@ After conducting a monthly breakdown of the opens-to-clisks conversion rate, it 
 ## Student Activity vs Activity Participation Rate
 
 ```python
-s = "Python syntax highlighting"
-print s
+for i in stud_acts_list:
+  curr = stud_act_actCount.loc[stud_act_actCount['student_activity_desc'] == i]
+  list1 = curr['counts']
+  x, p_val = stats.kruskal(list1, stud_act_actCount['counts'])
+  sig_results.append(p_val)
 ```
+```python
+to_add = list()
+
+for j in sig_results:
+  if j <= 0.05:
+    to_add.append('yes')
+  else:
+    to_add.append('no')
+``` 
 
 ---
 Please put results with visualization under this file
