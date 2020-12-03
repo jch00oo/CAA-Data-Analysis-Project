@@ -4,6 +4,11 @@ Our Fall 2020 Data Science Discovery Program research project was conducted unde
 
 This project was created to not only understand more about the individuals who are subscribed, but also to identify highly-engaged content, grow the size of active subscribers, and sustain overall engagement with the alumni community.
 
+## Table of Contents
+
+1. [Understanding CalCon Engagement (10/2019 - 9/2020)] ()
+2. [Opens-to-clicks Conversion Rate] ()
+
 ----
 
 ## Understanding CalCon Engagement (10/2019 - 9/2020)
