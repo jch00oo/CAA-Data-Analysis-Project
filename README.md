@@ -70,11 +70,12 @@ for j in sig_results:
   else:
     to_add.append('no')
 ``` 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
+As a result, we've extracted the top 15 student activities with significantly higher participation rates:
+| Index         | Student Activity   |
+| ------------- |:------------------:|
+| 1    | SLCP-Student Participants    |
+| 2    | Interational House Resident      |
+| 3 | Undergrad Research Apprentice Pgm (URAP)     |
 
 
 
