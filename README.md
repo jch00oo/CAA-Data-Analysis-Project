@@ -6,4 +6,12 @@ This project was created to not only understand more about the individuals who a
 
 ----
 
+## Understanding CalCon Engagement (10/2019 - 9/2020)
+
+In the context of the CalCon newsletter, engagement is segmented in three ways:
+1. Subscribers: individuals signed up to receive CalCon monthly newsletters
+2. Openers: subcribers who have opened an email newsletter
+3. Clickers: Openers who have clicked a URL link
+
+
 Please put results with visualization under this file
