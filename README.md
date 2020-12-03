@@ -47,9 +47,26 @@ Overall, the demographic of CalCon's opener engagers seem to be older, with 30 t
 
 ![Screen Shot 2020-12-03 at 12 27 16 PM](https://user-images.githubusercontent.com/70298391/101084498-e6317480-3562-11eb-8540-c297496f7fba.png)
 
-To further understand clickers engagement, we analzyed the relationship between number of clicks per edition and number of URLs included in each monthly newsletter. As shown in the scatterplot below, there does seems †o be a weakly positive correlation between total number of links clicked and URLS included; the more URLs included, the more clicks we can expect.
+To further understand clickers engagement, we analzyed the relationship between number of clicks per edition and number of URLs included in each monthly newsletter. We used the code below to extract the total number of links per PDF edition of every monthly CalCons newsletter. [source](https://www.thepythoncode.com/article/extract-pdf-links-with-python)
 
-However, it is reasonable to conclude that number of links clicked is related to subsciber interests, which we further analyze in the next sections.
+```python
+total_urls = []
+for i in newsletters:
+  pdf_file = pikepdf.Pdf.open(i)
+  urls = []
+    # iterate over PDF pages
+  for page in pdf_file.pages:
+    for annots in page.get("/Annots"):
+      uri = annots.get("/A").get("/URI")
+      if uri is not None:
+          urls.append(uri)
+  total_urls.append(len(urls))
+  print("[*] Total URLs extracted:", len(urls))
+```
+
+The scatterplot included below represents the relationship between number of links in a newsletter and total number of clicks recorded for that newsletter. There does seems †o be a positive relationship between total number of links clicked and URLS included; for every additional URL included, we can expect about 117 more clicks for a newsletter.
+
+However, it is equally important to recognize that the number of links clicked is related to subsciber interests, which we further analyze in the next sections.
 
 ---
 ## Age vs Activity Participation Rate
