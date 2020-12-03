@@ -12,6 +12,15 @@ In the context of the CalCon newsletter, engagement is segmented in three ways:
 1. Subscribers: individuals signed up to receive CalCon monthly newsletters
 2. Openers: subcribers who have opened an email newsletter
 3. Clickers: Openers who have clicked a URL link
+Alumni who are subscribed to the newletter but have not opened or clicked a link in CalCons between October 2109 and September 2020 are defined as non-engagers.
 
+
+
+
+
+
+
+
+---
 
 Please put results with visualization under this file
