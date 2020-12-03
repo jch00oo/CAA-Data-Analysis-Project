@@ -50,6 +50,9 @@ After conducting a monthly breakdown of the opens-to-clisks conversion rate, it 
 ---
 ## Student Activity vs Activity Participation Rate
 
+In order to characterize highly engaged subscribers, we looked at each alumnus' student activity (affiliatio while they were a student) and analyzed whether individuals in certain student activities are more likely to engage in alumni events hosted by CAA.
+
+We began by grouping alumni event participants by their student activity and conducting the Kruskal-Wallis test to compare each group's distribution of participation rates to that of the population of all subscribers.
 ```python
 for i in stud_acts_list:
   curr = stud_act_actCount.loc[stud_act_actCount['student_activity_desc'] == i]
@@ -57,6 +60,7 @@ for i in stud_acts_list:
   x, p_val = stats.kruskal(list1, stud_act_actCount['counts'])
   sig_results.append(p_val)
 ```
+Then we used 5% significance level to filter out activities who had significantly higher participation rates:
 ```python
 to_add = list()
 
