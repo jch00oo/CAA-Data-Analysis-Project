@@ -8,7 +8,7 @@ This project was created to not only understand more about the individuals who a
 
 1. [Understanding CalCon Engagement (10/2019 - 9/2020)](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#understanding-calcon-engagement-102019---92020)
 2. [Opens-to-clicks Conversion Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#opens-to-clicks-conversion-rate)
-3. 
+3. [Age vs Activity Participation Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#age-vs-activity-participation-rate)
 
 ----
 
