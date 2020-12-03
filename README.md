@@ -50,5 +50,10 @@ After conducting a monthly breakdown of the opens-to-clisks conversion rate, it 
 ---
 ## Student Activity vs Activity Participation Rate
 
+```python
+s = "Python syntax highlighting"
+print s
+```
+
 ---
 Please put results with visualization under this file
