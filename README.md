@@ -21,6 +21,8 @@ Of all subscribers, over half (55%) of those subscribed to CalCon have opened a 
 
 15% of those subscribed to CalCon engaged with a newsletter by clicking between October 2019 and September 2020. A subscriber averages roughly .13 clicks within the specified time frame. The average number of clicks for subscribers who have opened at least once is .54 clicks.
 
+![Screen Shot 2020-12-02 at 11 06 15 PM](https://user-images.githubusercontent.com/70298391/100982676-3bd33600-34fd-11eb-9d6e-153d5c060154.png)
+
 ---
 ## Opens-to-clicks Conversion Rate
 
