@@ -73,11 +73,21 @@ for j in sig_results:
 As a result, we've extracted the top 15 student activities with significantly higher participation rates:
 | Index         | Student Activity   |
 | ------------- |:------------------:|
-| 1    | SLCP-Student Participants    |
-| 2    | Interational House Resident      |
-| 3 | Undergrad Research Apprentice Pgm (URAP)     |
-
-
+| 1    | SLCP-Student Participants |
+| 2    | Interational House Resident  |
+| 3 | Undergrad Research Apprentice Pgm (URAP) |
+| 4 | Educational Opportunity Program |
+| 5 | Univ Students Co-op Assoc. Resident |
+| 6 | Athletic Study Center |
+| 7 | Disabled Student Program Alumni |
+| 8 | Summer Bridge Program Participant |
+| 9 | Tau Beta Pi Engineers' Honors Society |
+| 10 | TRSP Transfer Student Services |
+| 11 | Berkeley Connect |
+| 12 | Biology Scholars Program |
+| 13 | PDP Calculus Intensive |
+| 14 | UC Extension |
+| 15 | Education Abroad Program - France |
 
 ---
 Please put results with visualization under this file
