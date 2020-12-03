@@ -30,9 +30,11 @@ The conversion rate between opens to clicks is defined as the number of people w
 
 The overall opens-to-clicks conversion rate is 0.23697, indicating that about 24% of people who opened a newsletter in the past year clicked on a link at least once. Analysis on individual subscriber opens-to-clicks conversion rates for those who have opened at least once shows that, on average, a subscriber will click about one link per two opens. 
 
+![Screen Shot 2020-12-02 at 11 32 56 PM](https://user-images.githubusercontent.com/70298391/100982807-59080480-34fd-11eb-9ad2-3d60c7ed5967.png)
+
 After conducting a monthly breakdown of the opens-to-clisks conversion rate, it seems that alumni are generally less likely to click on links during the school year months. We hypothesize that the conversion rate was the highest in December 2019 (20%) because Cal won the Big Game that year; conversion rates were low in April 2020 (2%) because of the coronavirus stay-at-home order.
 
-
+![Screen Shot 2020-12-02 at 11 47 08 PM](https://user-images.githubusercontent.com/70298391/100982855-69b87a80-34fd-11eb-82a8-85a378199202.png)
 
 ---
 Please put results with visualization under this file
