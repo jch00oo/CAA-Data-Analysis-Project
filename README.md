@@ -88,6 +88,7 @@ As a result, we've extracted the top 15 student activities with significantly hi
 | 13 | PDP Calculus Intensive |
 | 14 | UC Extension |
 | 15 | Education Abroad Program - France |
+
 Alumni from these student activities, on average, participate in alumni events more frequently, hence CAA can focus on creating events and newsletter content more catered to these groups to further increase engagement and participation.
 
 ---
