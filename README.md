@@ -42,6 +42,10 @@ After conducting a monthly breakdown of the opens-to-clisks conversion rate, it 
 
 ![Screen Shot 2020-12-02 at 11 47 08 PM](https://user-images.githubusercontent.com/70298391/100982855-69b87a80-34fd-11eb-82a8-85a378199202.png)
 
+Overall, the demographic of CalCon's opener engagers seem to be older, with 30 to 40 year old having the highest open rate.
+
+![Screen Shot 2020-12-03 at 12 27 16 PM](https://user-images.githubusercontent.com/70298391/101084498-e6317480-3562-11eb-8540-c297496f7fba.png)
+
 ---
 ## Age vs Activity Participation Rate
 
