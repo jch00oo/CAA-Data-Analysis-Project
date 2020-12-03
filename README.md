@@ -42,4 +42,13 @@ After conducting a monthly breakdown of the opens-to-clisks conversion rate, it 
 ![Screen Shot 2020-12-02 at 11 47 08 PM](https://user-images.githubusercontent.com/70298391/100982855-69b87a80-34fd-11eb-82a8-85a378199202.png)
 
 ---
+## Age vs Open Rate
+
+---
+## Age vs Activity Participation Rate
+
+---
+## Student Activity vs Activity Participation Rate
+
+---
 Please put results with visualization under this file
