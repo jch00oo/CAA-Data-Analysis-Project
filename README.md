@@ -8,6 +8,7 @@ This project was created to not only understand more about the individuals who a
 
 1. [Understanding CalCon Engagement (10/2019 - 9/2020)](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#understanding-calcon-engagement-102019---92020)
 2. [Opens-to-clicks Conversion Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#opens-to-clicks-conversion-rate)
+3. 
 
 ----
 
@@ -42,10 +43,20 @@ After conducting a monthly breakdown of the opens-to-clisks conversion rate, it 
 ![Screen Shot 2020-12-02 at 11 47 08 PM](https://user-images.githubusercontent.com/70298391/100982855-69b87a80-34fd-11eb-82a8-85a378199202.png)
 
 ---
-## Age vs Open Rate
-
----
 ## Age vs Activity Participation Rate
+
+*Add graph/visualization later*
+We divided subscribers into three groups -- young, mid, and old -- based the CAA membership type as well as looking at the distribution of ages and dividing them accordingly:
+
+| Group       | Birth year range  |
+| ------------- |:-------------:|
+| Young     | 1980 - 2020 |
+| Mid      | 1955 - 1979    |
+| Old | 0 - 1954    |
+
+For those whose birth years were not available, we used their graduation year to infer their age and put them in the appropriate age group. 
+
+After conducting a series of Kruskal-Wallis tests on each age group's alumni event participation rate versus the population's event participation rate, we've concluded that the old age group had significantly higher participation rates compared to the young and mid age groups, participating in alumni events three times as much as the young age group on average.
 
 ---
 ## Student Activity vs Activity Participation Rate
