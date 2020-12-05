@@ -132,4 +132,9 @@ As a result, we've extracted the top 15 student activities with significantly hi
 Alumni from these student activities, on average, participate in alumni events more frequently, hence CAA can focus on creating events and newsletter content more catered to these groups to further increase engagement and participation.
 
 ---
+## Effect of link description in CalCons Newsletter
+
+
+
+---
 Please put results with visualization under this file
