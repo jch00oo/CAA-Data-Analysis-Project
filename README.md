@@ -136,6 +136,7 @@ Alumni from these student activities, on average, participate in alumni events m
 Calcons Newsletters have multiple links in them. While many have a description under their Titles, many don't. I found this distribution of descriptions vs no descriptions to be randomly distributed across all CalCon Newsletters and decided to investiagte what it meant on the number of clicks.
 
 I made a scraper using Beautiful Soup that can scrape a url to get its Title and Description.
+```python
 
 title_names = []
 for i in left_over_links:
@@ -148,15 +149,16 @@ for i in left_over_links:
         soup = BeautifulSoup(reqs.text, 'html.parser') 
 
         # displaying the title 
-				print("Title of the website is : " + title.get_text())
-				print("Description of title is : " + title.get_des()) 
+	print("Title of the website is : " + title.get_text())
+	print("Description of title is : " + title.get_des()) 
 
         for title in soup.find_all('title'): 
             title_names.append(title.get_text()
-						print(title.get_text())
+	    print(title.get_text())
     except:
         title_names.append(0)
-				print("ERROR")
+	print("ERROR")
+``` 
 
 ---
 Please put results with visualization under this file
