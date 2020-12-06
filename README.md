@@ -11,7 +11,7 @@ This project was created to not only understand more about the individuals who a
 3. [Age vs Activity Participation Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#age-vs-activity-participation-rate)
 4. [Student Activity vs Activity Participation Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#student-activity-vs-activity-participation-rate)
 5.
-6. [Next Steps]
+6. [Next Steps] (https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#next-steps)
 
 ----
 
