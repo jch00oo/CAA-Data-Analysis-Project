@@ -163,8 +163,46 @@ for i in left_over_links:
 ``` 
 
 Here is some initial Exploratory Analysis I conducted that shows that links with descriptions get more more clicks:
+Unique links in CalCons in 2019-2020 had 139 links without description and 350 links with a description.
+
+![Unique links in CalCons 2019-2020 Newsletters](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.50.13%20PM.png)
+
+Looking at the average number of times links in both the categories were clicked, we see that there were 73.6% more clicks on links with a description on average.
+![avg # of clicks per category](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.52.30%20PM.png)
+
+However, averages are prone to problems due to extremes. So I created a boxplot of the distribution of the number of clicks per category. I found that links with a description were really skewed due to a few outliers.
 ![Boxplot of Distributions](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%2010.02.56%20PM.png)
 
+Therefore, looking at Median number of clicks per catgeory is better than looking at average. Even by looking at the median, we can see that the links with descriptions had 47.5% more clicks.
+
+![Median # of clicks per category ](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.52.44%20PM.png)
+
+I decided to look at what the most clicked links were per newsletter. These were the results:
+![top links clicked per newsletter and if they had a description or not](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%2010.06.56%20PM.png)
+
+Here is the barplot for the same. It shows that 60% of the most clicked links for all top clicks/ newsletter issue had a description.
+![Descriptions in most clicked links per calcons](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.58.12%20PM.png)
+
+Therefore, I propose a hypothesis that links with descriptions get more clicks. To really prove this from a statistical point, I conducted a Two Value T-test using scipy.
+
+Null Hypothesis (H0): Having meta descriptions does not affect median number of clicks
+Alternate Hypothesis (H1): Having meta descriptions matters affects the median number of clicks
+
+```python
+from scipy import stats
+stats.ttest_ind(vals_1, vals_0)
+```
+The result: Ttest_indResult(statistic=1.729173246824389, pvalue=0.08441179288193607)
+
+Interpretation of our results:
+
+p_value in our case = 0.085 t_stat = 1.729
+
+As 0.085 > 0.05, we fail to reject the null hypothesis at the 95% confidence level.
+
+But, if we take 90% confidence interval, then p-value is 0.1 and then we reject the Null Hypothesis in favor of the Alternate Hypothesis
+
+Due to extreme variance of the values in links with decription, I think we get a higher p value. However, we can conclude at a 90% confidence level that there is strong statistical evidence against the Null Hypothesis. Therefore, adding more descriptions to links in newsletters is benefitial and has the ability to increase the median number of clicked links by 47.5%. 
 
 ---
 ## Next Steps
