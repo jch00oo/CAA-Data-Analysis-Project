@@ -172,5 +172,7 @@ However, there is still analysis left to do to solidify our findings and identif
 * Access data regarding when people subscribed/unsubscribed to the newsletter
 * Something with correlation?
 
+We believe the insights and suggestions we have extracted will increase alumni engagement with the newsletters and events as well as donations, allowing long term success for the future operations of CAA.
+
 ---
 Please put results with visualization under this file
