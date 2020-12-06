@@ -163,7 +163,7 @@ for i in left_over_links:
 ``` 
 
 Here is some initial Exploratory Analysis I conducted that shows that links with descriptions get more more clicks:
-
+![Boxplot of Distributions](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%2010.02.56%20PM.png)
 
 
 ---
