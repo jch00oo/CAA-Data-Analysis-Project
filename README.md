@@ -135,9 +135,9 @@ Alumni from these student activities, on average, participate in alumni events m
 
 ---
 ## Effect of link description on clicks in CalCons Newsletter
-Calcons Newsletters have multiple links in them. While many have a description under their Titles, many don't. I found this distribution of descriptions vs no descriptions to be randomly distributed across all CalCon Newsletters and decided to investiagte what it meant on the number of clicks.
+Calcons Newsletters have multiple links in them. While many have a description under their titles, many don't. I found this distribution of descriptions vs no descriptions to be randomly distributed across all CalCon Newsletters and decided to investiagte what it meant on the number of clicks.
 
-I made a scraper using Beautiful Soup that can scrape a url to get its Title and Description.
+I made a scraper using Beautiful Soup that can scrape a url to get its title and description.
 ```python
 
 title_names = []
@@ -163,6 +163,7 @@ for i in left_over_links:
 ``` 
 
 Here is some initial Exploratory Analysis I conducted that shows that links with descriptions get more more clicks:
+
 Unique links in CalCons in 2019-2020 had 139 links without description and 350 links with a description.
 
 <p align="center">
@@ -199,6 +200,8 @@ Here is the barplot for the same. It shows that 60% of the most clicked links fo
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.58.12%20PM.png" width="350" title="Descriptions in most clicked links per calcons">
 </p>
 
+While I could not make a classifier to see what kinds of content usually has or does not have a description, I looked at the links manually and found there to be not particular genre of content that fell on one catgeory or the other. 
+
 Therefore, I propose a hypothesis that links with descriptions get more clicks. To really prove this from a statistical point, I conducted a Two Value T-test using scipy.
 
 Null Hypothesis (H0): Having meta descriptions does not affect median number of clicks
@@ -225,12 +228,14 @@ Due to extreme variance of the values in links with decription, I think we get a
 
 From the insights we have extracted through our analysis, we have made the following suggestions to CAA in order to optimize their content to increase their subscribers' engagement:
 * Appeal to older alumni by curating content for them and trying to get more senior subscribers as they are much more likely to participate in events and donate
-*
+* Write a description under every link as it has the potential to increase the probability of that link being clicked.
+* 
 
 However, there is still analysis left to do to solidify our findings and identify more areas for improvement:
 * Conduct NLP analysis on the "Feature Benefits" sections of each newsletter
 * Access data regarding when people subscribed/unsubscribed to the newsletter
-* Something with correlation?
+* Classify the content for links with description vs those without a description to see if people tend to generally click less on a particular type of content
+*
 
 We believe the insights and suggestions we have extracted will increase alumni engagement with the newsletters and events as well as donations, allowing long term success for the future operations of CAA.
 
