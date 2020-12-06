@@ -161,6 +161,9 @@ for i in left_over_links:
         title_names.append(0)
 	print("ERROR")
 ``` 
+
+Here is some initial Exploratory Analysis I found that shows that links with descriptions get more more clicks:
+
 ---
 ## Next Steps
 
