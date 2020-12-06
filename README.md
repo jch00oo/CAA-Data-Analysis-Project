@@ -162,7 +162,9 @@ for i in left_over_links:
 	print("ERROR")
 ``` 
 
-Here is some initial Exploratory Analysis I found that shows that links with descriptions get more more clicks:
+Here is some initial Exploratory Analysis I conducted that shows that links with descriptions get more more clicks:
+
+
 
 ---
 ## Next Steps
