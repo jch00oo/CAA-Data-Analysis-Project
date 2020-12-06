@@ -165,7 +165,9 @@ for i in left_over_links:
 Here is some initial Exploratory Analysis I conducted that shows that links with descriptions get more more clicks:
 Unique links in CalCons in 2019-2020 had 139 links without description and 350 links with a description.
 
-![Unique links in CalCons 2019-2020 Newsletters](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.50.13%20PM.png)
+<p align="center">
+  <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.50.13%20PM.png" width="350" title="Unique links in CalCons 2019-2020 Newsletters">
+</p>
 
 Looking at the average number of times links in both the categories were clicked, we see that there were 73.6% more clicks on links with a description on average.
 
