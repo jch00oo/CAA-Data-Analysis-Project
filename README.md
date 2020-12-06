@@ -10,7 +10,7 @@ This project was created to not only understand more about the individuals who a
 2. [Opens-to-clicks Conversion Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#opens-to-clicks-conversion-rate)
 3. [Age vs Activity Participation Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#age-vs-activity-participation-rate)
 4. [Student Activity vs Activity Participation Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#student-activity-vs-activity-participation-rate)
-5.
+5. [Effect of link description on clicks in CalCons Newsletter](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#effect-of-link-description-on-clicks-in-calcons-newsletter)
 6. [Next Steps](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#next-steps)
 
 ----
