@@ -10,6 +10,8 @@ This project was created to not only understand more about the individuals who a
 2. [Opens-to-clicks Conversion Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#opens-to-clicks-conversion-rate)
 3. [Age vs Activity Participation Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#age-vs-activity-participation-rate)
 4. [Student Activity vs Activity Participation Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#student-activity-vs-activity-participation-rate)
+5.
+6. [Next Steps]
 
 ----
 
@@ -159,6 +161,16 @@ for i in left_over_links:
         title_names.append(0)
 	print("ERROR")
 ``` 
+## Next Steps
+
+From the insights we have extracted through our analysis, we have made the following suggestions to CAA in order to optimize their content to increase their subscribers' engagement:
+* Appeal to older alumni by curating content for them and trying to get more senior subscribers as they are much more likely to participate in events and donate
+*
+
+However, there is still analysis left to do to solidify our findings and identify more areas for improvement:
+* Conduct NLP analysis on the "Feature Benefits" sections of each newsletter
+* Access data regarding when people subscribed/unsubscribed to the newsletter
+* Something with correlation?
 
 ---
 Please put results with visualization under this file
