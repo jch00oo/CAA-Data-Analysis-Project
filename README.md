@@ -173,7 +173,7 @@ Unique links in CalCons in 2019-2020 had 139 links without description and 350 l
 Looking at the average number of times links in both the categories were clicked, we see that there were 73.6% more clicks on links with a description on average.
 
 <p align="center">
-  <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.52.30%20PM.png" width="350" title="avg # of clicks per category">
+  <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.52.30%20PM.png" width="450" title="avg # of clicks per category">
 </p>
 
 However, averages are prone to problems due to extremes. So I created a boxplot of the distribution of the number of clicks per category. I found that links with a description were really skewed due to a few outliers.
@@ -185,13 +185,13 @@ However, averages are prone to problems due to extremes. So I created a boxplot 
 Therefore, looking at Median number of clicks per catgeory is better than looking at average. Even by looking at the median, we can see that the links with descriptions had 47.5% more clicks.
 
 <p align="center">
-  <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.52.44%20PM.png" width="350" title="Median # of clicks per category">
+  <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.52.44%20PM.png" width="450" title="Median # of clicks per category">
 </p>
 
 I decided to look at what the most clicked links were per newsletter. These were the results:
 
 <p align="center">
-  <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%2010.06.56%20PM.png" width="350" title="top links clicked per newsletter and if they had a description or not">
+  <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%2010.06.56%20PM.png" width="450" title="top links clicked per newsletter and if they had a description or not">
 </p>
 
 Here is the barplot for the same. It shows that 60% of the most clicked links for all top clicks/ newsletter issue had a description.
