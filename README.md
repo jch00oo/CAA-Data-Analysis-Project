@@ -1,4 +1,4 @@
-# CAA-Data-Analysis-Project
+# CAA Data Analysis Project
 
 Our Fall 2020 Data Science Discovery Program research project was conducted under the guidance of the Cal Alumni Association. Our goal is to understand and analyze subscriber engagement in the past year with the CalCon newsletter, a monthly email newsletter for the UC Berkeley alumni community, in order to present actionable insights.
 
