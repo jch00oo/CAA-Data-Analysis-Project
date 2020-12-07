@@ -84,48 +84,6 @@ After conducting a series of Kruskal-Wallis tests on each age group's alumni eve
 However, it is equally important to recognize that the number of links clicked and event participation is related to subscriber interests, which we further analyze in the next sections.
 
 ---
-## Student Activity vs Activity Participation Rate
-
-In order to characterize the highly engaged subscribers, we looked at each alumnus' student activity (affiliation while they were students) and analyzed whether individuals in certain student activities are more likely to engage in alumni events hosted by CAA.
-
-We began by grouping alumni event participants by their student activity and conducting the Kruskal-Wallis test to compare each group's distribution of participation rates to that of the population of all subscribers.
-```python
-for i in stud_acts_list:
-  curr = stud_act_actCount.loc[stud_act_actCount['student_activity_desc'] == i]
-  list1 = curr['counts']
-  x, p_val = stats.kruskal(list1, stud_act_actCount['counts'])
-  sig_results.append(p_val)
-```
-Then we used 5% significance level to filter out activities who had significantly higher participation rates:
-```python
-to_add = list()
-
-for j in sig_results:
-  if j <= 0.05:
-    to_add.append('yes')
-  else:
-    to_add.append('no')
-``` 
-As a result, we've extracted the top 15 student activities with significantly higher participation rates:
-| Index         | Student Activity   |
-| ------------- |:------------------:|
-| 1    | SLCP-Student Participants |
-| 2    | Interational House Resident  |
-| 3 | Undergrad Research Apprentice Pgm (URAP) |
-| 4 | Educational Opportunity Program |
-| 5 | Univ Students Co-op Assoc. Resident |
-| 6 | Athletic Study Center |
-| 7 | Disabled Student Program Alumni |
-| 8 | Summer Bridge Program Participant |
-| 9 | Tau Beta Pi Engineers' Honors Society |
-| 10 | TRSP Transfer Student Services |
-| 11 | Berkeley Connect |
-| 12 | Biology Scholars Program |
-| 13 | PDP Calculus Intensive |
-| 14 | UC Extension |
-| 15 | Education Abroad Program |
-
----
 ## Effect of link description on clicks in CalCons Newsletter
 Calcons Newsletters have multiple links in them. While many have a description under their titles, many don't. We found this distribution of descriptions vs no descriptions to be randomly distributed across all CalCon Newsletters and decided to investigate what it meant on the number of clicks.
 
