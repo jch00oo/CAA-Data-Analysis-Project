@@ -31,21 +31,15 @@ To clean up the data, we drop duplicates of repeated clicks on the same website 
 
 The average age of repeat clickers is around 63 years old, which indicates that those who actively clicked on the CalCon newsletters in the past year are also seniors and the age of most repeat clickers are greater than 75.
 
-<p align="center">
-  <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/2.png">
-</p>
+![2](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/2.png)
 
 We can see that the average number of alumni activity participation of repeat clickers is 9 times in the past 12 months, which is 1.5 times of that of all clickers.
 
-<p align="center">
-  <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/3.png">
-</p>
+![3](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/3.png)
 
 Same indication appears for repeat clickers. We can see that improving the clickers’ performance on engaging with the CalCon newsletters can increase their performance on the alumni activity participation.
 
-<p align="center">
-  <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/4.png">
-</p>
+![4](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/4.png)
 
 This plot indicates an even higher correlation(=30.8) between the average amount of gift and the number of clicks of repeat clickers than that of all clickers.
 
