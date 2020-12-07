@@ -34,11 +34,6 @@ This plot indicates an even higher correlation(=30.8) between the average amount
 ---
 ## Opens-to-clicks Conversion Rate
 
-In the context of the CalCon newsletter, engagement is segmented in three ways:
-1. *Subscribers*: individuals signed up to receive CalCon monthly newsletters
-2. *Openers*: subscribers who have opened an email newsletter
-3. *Clickers*: Openers who have clicked a URL link
-
 The conversion rate between opens to clicks is defined as the number of people who have clicked a link over the number of people who have opened a CalCons newsletter. 
 
 The overall opens-to-clicks conversion rate is 0.23697, indicating that about 24% of people who opened a newsletter in the past year clicked on a link at least once. Analysis on individual subscriber opens-to-clicks conversion rates for those who have opened at least once shows that, on average, a subscriber will click about one link per two opens. 
@@ -70,11 +65,11 @@ for i in newsletters:
   print("[*] Total URLs extracted:", len(urls))
 ```
 
-The scatterplot included below represents the relationship between number of links in a newsletter and total number of clicks recorded for that newsletter. There does seem to be a positive relationship between total number of links clicked and URLS included; for every additional URL included, we can expect about 3.5 more clicks for a newsletter.
+There does seem to be a positive relationship between total number of links clicked and URLS included; for every additional URL included, we can expect about 3.5 more clicks for a newsletter.
 
 ![Screen Shot 2020-12-03 at 3 18 08 PM](https://user-images.githubusercontent.com/70298391/101100108-cc9c2700-357a-11eb-84c9-66256490a7af.png)
 
-We divided subscribers into three groups -- young, mid, and old -- based the CAA membership type as well as looking at the distribution of ages and dividing them accordingly:
+Then, we divided subscribers into three groups -- young, mid, and old -- based the CAA membership type as well as looking at the distribution of ages and dividing them accordingly:
 
 | Group       | Birth year range  |
 | ------------- |:-------------:|
@@ -128,7 +123,7 @@ As a result, we've extracted the top 15 student activities with significantly hi
 | 12 | Biology Scholars Program |
 | 13 | PDP Calculus Intensive |
 | 14 | UC Extension |
-| 15 | Education Abroad Program - France |
+| 15 | Education Abroad Program |
 
 ---
 ## Effect of link description on clicks in CalCons Newsletter
