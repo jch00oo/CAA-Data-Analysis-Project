@@ -4,6 +4,8 @@ Our Fall 2020 Data Science Discovery Program research project was conducted unde
 
 This project was created to not only understand more about the individuals who are subscribed, but also to identify highly-engaged content, grow the size of active subscribers, and sustain overall engagement with the alumni community.
 
+We took various approaches to understand the most active subscribers as well as the most "attractice" content, which we have outlined below through points 1-6.
+
 ## Table of Contents
 
 1. [Understanding CalCon Engagement (10/2019 - 9/2020)](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#understanding-calcon-engagement-102019---92020)
@@ -11,10 +13,27 @@ This project was created to not only understand more about the individuals who a
 3. [Age vs Activity Participation Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#age-vs-activity-participation-rate)
 4. [Student Activity vs Activity Participation Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#student-activity-vs-activity-participation-rate)
 5. [Effect of link description on clicks in CalCons Newsletter](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#effect-of-link-description-on-clicks-in-calcons-newsletter)
-6. [Next Steps](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#next-steps)
+6. [Engagement Among Clickers] 
+7. [Next Steps](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#next-steps)
 
 ----
+## Engagement Among Clickers
 
+To understand the active engagement of CalCon Newsletters among clickers, we first need to quantify what active engagement means. 
+
+Active engagement is defined as the number of clicks more than or equal to half of the number of newsletters delivered in the past 12 months. Since there were 14 issues from 09/2019-09/2020, we define the active engagement as the number of clicks >= 7 in the past year.
+
+Then we define repeat clickers as those who clicked on the CalCon Newsletters more than or equal to 7 times in the past 12 months since those are the group of people who engaged actively with the newsletters. 
+
+Before we look into the entities of all clickers and repeat clickers, we find that there are issues with the data on repeated records on clicks and around 10 percent of missing values of clickers information, so we decide to clean the data first. 
+
+What we do is drop duplicates of repeated clicks on the same website within a day and the rule applied is that for each entity_id, we count only the first click as a click for the day. With that, we find that there are roughly 52605 clicks and 25402 unique clickers clicked on the CalCon newsletters at least once in the past year. For the missing values, we infer the birth date of clickers based on the clickers’ degree 1 year. Now we can explore the characteristics of both clickers and repeat clickers and compare those two groups in the following.
+
+<p align="center">
+  <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/1.png">
+</p>
+
+---
 ## Understanding CalCon Engagement (10/2019 - 9/2020)
 
 In the context of the CalCon newsletter, engagement is segmented in three ways:
@@ -235,9 +254,5 @@ However, there is still analysis left to do to solidify our findings and identif
 * Conduct NLP analysis on the "Feature Benefits" sections of each newsletter
 * Access data regarding when people subscribed/unsubscribed to the newsletter
 * Classify the content for links with description vs those without a description to see if people tend to generally click less on a particular type of content
-*
 
 We believe the insights and suggestions we have extracted will increase alumni engagement with the newsletters and events as well as donations, allowing long term success for the future operations of CAA.
-
----
-Please put results with visualization under this file
