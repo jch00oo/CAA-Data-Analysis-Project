@@ -19,11 +19,11 @@ We took various approaches to understand the most active subscribers as well as 
 ----
 ## Engagement Among Clickers
 
-To understand the active engagement of CalCon Newsletters among clickers, we first need to quantify what active engagement means. 
+We first begin with quantifying what active engagement means. 
 
-Active engagement is defined as the number of clicks more than or equal to half of the number of newsletters delivered in the past 12 months. Since there were 14 issues from 09/2019-09/2020, we define the active engagement as the number of clicks >= 7 in the past year.
+Active engagement is defined as the number of clicks more than or equal to half of the number of newsletters delivered in the past 12 months; since there were 14 issues from 09/2019-09/2020, we define active engagement as >= 7 clicks in the past year.
 
-Then we define repeat clickers as those who clicked on the CalCon Newsletters more than or equal to 7 times in the past 12 months since those are the group of people who engaged actively with the newsletters. 
+Then we define repeat clickers as those who clicked on the CalCon Newsletters more than or equal to 7 times in the past 12 months.
 
 Before we look into the entities of all clickers and repeat clickers, we find that there are issues with the data on repeated records on clicks and around 10 percent of missing values of clickers information, so we decide to clean the data first. 
 
@@ -33,13 +33,13 @@ What we do is drop duplicates of repeated clicks on the same website within a da
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/1.png">
 </p>
 
-From the above distribution, the average age of repeat clickers is around 63 years old, which indicates that those who actively clicked on the CalCon newsletters in the past year are also seniors and the age of most repeat clickers are greater than 75. Whereas, the younger age and the middle age groups contribute to a fairly low portion of the big group compared to seniors.
+The average age of repeat clickers is around 63 years old, which indicates that those who actively clicked on the CalCon newsletters in the past year are also seniors and the age of most repeat clickers are greater than 75.
 
 <p align="center">
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/2.png">
 </p>
 
-From the distribution we can see that the average number of alumni activity participation of repeat clickers is 9 times in the past 12 months, which is 1.5 times of that of all clickers.
+We can see that the average number of alumni activity participation of repeat clickers is 9 times in the past 12 months, which is 1.5 times of that of all clickers.
 
 <p align="center">
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/3.png">
@@ -109,11 +109,6 @@ The scatterplot included below represents the relationship between number of lin
 
 ![Screen Shot 2020-12-03 at 3 18 08 PM](https://user-images.githubusercontent.com/70298391/101100108-cc9c2700-357a-11eb-84c9-66256490a7af.png)
 
-However, it is equally important to recognize that the number of links clicked is related to subsciber interests, which we further analyze in the next sections.
-
----
-## Age vs Activity Participation Rate
-
 We divided subscribers into three groups -- young, mid, and old -- based the CAA membership type as well as looking at the distribution of ages and dividing them accordingly:
 
 | Group       | Birth year range  |
@@ -126,10 +121,12 @@ For those whose birth years were not available, we used their graduation year to
 
 After conducting a series of Kruskal-Wallis tests on each age group's alumni event participation rate versus the population's event participation rate, we've concluded that the old age group had significantly higher participation rates compared to the young and mid age groups, participating in alumni events three times as much as the young age group on average.
 
+However, it is equally important to recognize that the number of links clicked and event participation is related to subsciber interests, which we further analyze in the next sections.
+
 ---
 ## Student Activity vs Activity Participation Rate
 
-In order to characterize highly engaged subscribers, we looked at each alumnus' student activity (affiliatio while they were a student) and analyzed whether individuals in certain student activities are more likely to engage in alumni events hosted by CAA.
+In order to characterize the highly engaged subscribers, we looked at each alumnus' student activity (affiliation while they were students) and analyzed whether individuals in certain student activities are more likely to engage in alumni events hosted by CAA.
 
 We began by grouping alumni event participants by their student activity and conducting the Kruskal-Wallis test to compare each group's distribution of participation rates to that of the population of all subscribers.
 ```python
