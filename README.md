@@ -187,12 +187,6 @@ Therefore, looking at Median number of clicks per catgeory is better than lookin
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.52.44%20PM.png" width="450" title="Median # of clicks per category">
 </p>
 
-I decided to look at what the most clicked links were per newsletter. These were the results:
-
-<p align="center">
-  <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%2010.06.56%20PM.png" width="450" title="top links clicked per newsletter and if they had a description or not">
-</p>
-
 The barplot shows that 60% of the most clicked links for all top clicks/ newsletter issue had a description.
 
 <p align="center">
@@ -203,17 +197,13 @@ While we could not make a classifier to see what kinds of content usually has or
 
 Therefore, we propose a hypothesis that links with descriptions get more clicks. To really prove this from a statistical point, we conducted a Two Value T-test using scipy.
 
-Null Hypothesis (H0): Having meta descriptions does not affect median number of clicks
+Null Hypothesis (H0): Having meta descriptions does not affect median number of clicks, 
 Alternate Hypothesis (H1): Having meta descriptions matters affects the median number of clicks
 
 ```python
 from scipy import stats
 stats.ttest_ind(vals_1, vals_0)
 ```
-The result: Ttest_indResult(statistic=1.729173246824389, pvalue=0.08441179288193607)
-
-Interpretation of our results:
-
 p_value in our case = 0.085 t_stat = 1.729
 
 As 0.085 > 0.05, we fail to reject the null hypothesis at the 95% confidence level.
