@@ -27,9 +27,7 @@ Before we look into the entities of all clickers and repeat clickers, we find th
 
 To clean up the data, we drop duplicates of repeated clicks on the same website within a day and count only the first click as a click for the day. With that, we find that there are roughly 52605 clicks and 25402 unique clickers clicked on the CalCon newsletters at least once in the past year. For the missing values, we infer the birth date of clickers based on the clickers’ "degree 1 year".
 
-<p align="center">
-  <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/1.png">
-</p>
+![1](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/1.png)
 
 The average age of repeat clickers is around 63 years old, which indicates that those who actively clicked on the CalCon newsletters in the past year are also seniors and the age of most repeat clickers are greater than 75.
 
