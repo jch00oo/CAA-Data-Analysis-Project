@@ -11,9 +11,7 @@ We took various approaches to understand the most active subscribers and the mos
 
 We defined active engagement as >= 7 clicks in the past year and repeat clickers as those who clicked on the CalCon Newsletters more than or equal to 7 times in the past 12 months.
 
-Before we look into the entities of all clickers and repeat clickers, we find that there are issues with the data on repeated records on clicks and around 10 percent of missing values of clickers information. 
-
-To clean up the data, we drop duplicates of repeated clicks on the same website within a day and count only the first click as a click for the day. With that, we find that there are roughly 52605 clicks and 25402 unique clickers clicked on the CalCon newsletters at least once in the past year. For the missing values, we infer the birth date of clickers based on the clickers’ "degree 1 year".
+We found that there are issues with the data on repeated records on clicks and around 10 percent of missing values of clickers information. To clean up the data, we dropped duplicates of repeated clicks on the same website within a day and count only the first click as a click for the day. With that, we find that there are roughly 52605 clicks and 25402 unique clickers clicked on the CalCon newsletters at least once in the past year.
 
 ![1](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/1.png)
 
@@ -116,7 +114,7 @@ Looking at the average number of times links in both the categories were clicked
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.52.30%20PM.png" width="450" title="avg # of clicks per category">
 </p>
 
-However, averages are prone to problems due to extremes. So I created a boxplot of the distribution of the number of clicks per category. I found that links with a description were really skewed due to a few outliers.
+However, averages are prone to problems due to extremes. So we created a boxplot of the distribution of the number of clicks per category. I found that links with a description were really skewed due to a few outliers.
 
 <p align="center">
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%2010.02.56%20PM.png" width="350" title="Boxplot of Distributions">
