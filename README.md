@@ -4,7 +4,7 @@ Our Fall 2020 Data Science Discovery Program research project was conducted unde
 
 This project was created to not only understand the individuals who are subscribed, but also to identify highly-engaged content, grow the size of active subscribers, and sustain overall engagement with the alumni community.
 
-We took various approaches to understand the most active subscribers as well as the most "attractice" content, which we have outlined below through points 1-6.
+We took various approaches to understand the most active subscribers and the most "attractice" content, which we have outlined below through points, and make suggestions to improve the CAA newsletter.
 
 ----
 ## Engagement Among Clickers
