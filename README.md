@@ -19,15 +19,13 @@ We took various approaches to understand the most active subscribers as well as 
 ----
 ## Engagement Among Clickers
 
-We first begin with quantifying what active engagement means. 
-
-Active engagement is defined as the number of clicks more than or equal to half of the number of newsletters delivered in the past 12 months; since there were 14 issues from 09/2019-09/2020, we define active engagement as >= 7 clicks in the past year.
+We defined active engagement as the number of clicks more than or equal to half of the number of newsletters delivered in the past 12 months; since there were 14 issues from 09/2019-09/2020, we define active engagement as >= 7 clicks in the past year.
 
 Then we define repeat clickers as those who clicked on the CalCon Newsletters more than or equal to 7 times in the past 12 months.
 
-Before we look into the entities of all clickers and repeat clickers, we find that there are issues with the data on repeated records on clicks and around 10 percent of missing values of clickers information, so we decide to clean the data first. 
+Before we look into the entities of all clickers and repeat clickers, we find that there are issues with the data on repeated records on clicks and around 10 percent of missing values of clickers information. 
 
-What we do is drop duplicates of repeated clicks on the same website within a day and the rule applied is that for each entity_id, we count only the first click as a click for the day. With that, we find that there are roughly 52605 clicks and 25402 unique clickers clicked on the CalCon newsletters at least once in the past year. For the missing values, we infer the birth date of clickers based on the clickers’ degree 1 year. Now we can explore the characteristics of both clickers and repeat clickers and compare those two groups in the following.
+To clean up the data, we drop duplicates of repeated clicks on the same website within a day and count only the first click as a click for the day. With that, we find that there are roughly 52605 clicks and 25402 unique clickers clicked on the CalCon newsletters at least once in the past year. For the missing values, we infer the birth date of clickers based on the clickers’ "degree 1 year".
 
 <p align="center">
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/1.png">
