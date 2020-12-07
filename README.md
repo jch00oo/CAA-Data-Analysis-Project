@@ -6,16 +6,6 @@ This project was created to not only understand the individuals who are subscrib
 
 We took various approaches to understand the most active subscribers as well as the most "attractice" content, which we have outlined below through points 1-6.
 
-## Table of Contents
-
-1. [Engagement Among Clickers](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#engagement-among-clickers)
-2. [Understanding CalCon Engagement (10/2019 - 9/2020)](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#understanding-calcon-engagement-102019---92020)
-3. [Opens-to-clicks Conversion Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#opens-to-clicks-conversion-rate)
-4. [Age vs Activity Participation Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#age-vs-activity-participation-rate)
-5. [Student Activity vs Activity Participation Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#student-activity-vs-activity-participation-rate)
-6. [Effect of link description on clicks in CalCons Newsletter](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#effect-of-link-description-on-clicks-in-calcons-newsletter)
-7. [Next Steps](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#next-steps)
-
 ----
 ## Engagement Among Clickers
 
@@ -44,25 +34,12 @@ Same indication appears for repeat clickers. We can see that improving the click
 This plot indicates an even higher correlation(=30.8) between the average amount of gift and the number of clicks of repeat clickers than that of all clickers.
 
 ---
-## Understanding CalCon Engagement (10/2019 - 9/2020)
+## Opens-to-clicks Conversion Rate
 
 In the context of the CalCon newsletter, engagement is segmented in three ways:
 1. *Subscribers*: individuals signed up to receive CalCon monthly newsletters
 2. *Openers*: subcribers who have opened an email newsletter
 3. *Clickers*: Openers who have clicked a URL link
-
-Alumni who are subscribed to the newletter but have not opened or clicked a link in CalCons between October 2019 and September 2020 are defined as *non-engagers*. Roughly 78,641 subscribers fall in this category, with respect to the indicated time period.
-
-Of all subscribers, over half (55%) of those subscribed to CalCon have opened a newsletter between October 2019 and September 2020. A subscriber averages roughly 2.6 opens within the specified time frame; the average number of opens between those who have opened at least once is 4.7 opens.
-
-![Screen Shot 2020-12-02 at 10 49 40 PM](https://user-images.githubusercontent.com/70298391/100982600-18a88680-34fd-11eb-8e43-7210de0eac35.png)
-
-15% of those subscribed to CalCon engaged with a newsletter by clicking between October 2019 and September 2020. A subscriber averages roughly .13 clicks within the specified time frame. The average number of clicks for subscribers who have opened at least once is .54 clicks.
-
-![Screen Shot 2020-12-02 at 11 06 15 PM](https://user-images.githubusercontent.com/70298391/100982676-3bd33600-34fd-11eb-9d6e-153d5c060154.png)
-
----
-## Opens-to-clicks Conversion Rate
 
 The conversion rate between opens to clicks is defined as the number of people who have clicked a link over the number of people who have opened a CalCons newsletter. 
 
