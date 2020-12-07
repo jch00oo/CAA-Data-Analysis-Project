@@ -9,9 +9,7 @@ We took various approaches to understand the most active subscribers and the mos
 ----
 ## Engagement Among Clickers
 
-We defined active engagement as the number of clicks more than or equal to half of the number of newsletters delivered in the past 12 months; since there were 14 issues from 09/2019-09/2020, we define active engagement as >= 7 clicks in the past year.
-
-Then we define repeat clickers as those who clicked on the CalCon Newsletters more than or equal to 7 times in the past 12 months.
+We defined active engagement as >= 7 clicks in the past year and repeat clickers as those who clicked on the CalCon Newsletters more than or equal to 7 times in the past 12 months.
 
 Before we look into the entities of all clickers and repeat clickers, we find that there are issues with the data on repeated records on clicks and around 10 percent of missing values of clickers information. 
 
@@ -72,7 +70,7 @@ for i in newsletters:
   print("[*] Total URLs extracted:", len(urls))
 ```
 
-The scatterplot included below represents the relationship between number of links in a newsletter and total number of clicks recorded for that newsletter. There does seems †o be a positive relationship between total number of links clicked and URLS included; for every additional URL included, we can expect about 3.5 more clicks for a newsletter.
+The scatterplot included below represents the relationship between number of links in a newsletter and total number of clicks recorded for that newsletter. There does seem to be a positive relationship between total number of links clicked and URLS included; for every additional URL included, we can expect about 3.5 more clicks for a newsletter.
 
 ![Screen Shot 2020-12-03 at 3 18 08 PM](https://user-images.githubusercontent.com/70298391/101100108-cc9c2700-357a-11eb-84c9-66256490a7af.png)
 
@@ -132,8 +130,6 @@ As a result, we've extracted the top 15 student activities with significantly hi
 | 14 | UC Extension |
 | 15 | Education Abroad Program - France |
 
-Alumni from these student activities, on average, participate in alumni events more frequently, hence CAA can focus on creating events and newsletter content more catered to these groups to further increase engagement and participation.
-
 ---
 ## Effect of link description on clicks in CalCons Newsletter
 Calcons Newsletters have multiple links in them. While many have a description under their titles, many don't. We found this distribution of descriptions vs no descriptions to be randomly distributed across all CalCon Newsletters and decided to investigate what it meant on the number of clicks.
@@ -163,12 +159,6 @@ for i in left_over_links:
 	print("ERROR")
 ``` 
 
-Unique links in CalCons in 2019-2020 had 139 links without description and 350 links with a description.
-
-<p align="center">
-  <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.50.13%20PM.png" width="350" title="Unique links in CalCons 2019-2020 Newsletters">
-</p>
-
 Looking at the average number of times links in both the categories were clicked, we see that there were 73.6% more clicks on links with a description on average.
 
 <p align="center">
@@ -193,9 +183,7 @@ The barplot shows that 60% of the most clicked links for all top clicks/ newslet
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.58.12%20PM.png" width="350" title="Descriptions in most clicked links per calcons">
 </p>
 
-While we could not make a classifier to see what kinds of content usually has or does not have a description, we looked at the links manually and found there to be not particular genre of content that fell on one category or the other. 
-
-Therefore, we propose a hypothesis that links with descriptions get more clicks. To really prove this from a statistical point, we conducted a Two Value T-test using scipy.
+We proposed a hypothesis that links with descriptions get more clicks and conducted a Two Value T-test using scipy.
 
 Null Hypothesis (H0): Having meta descriptions does not affect median number of clicks, 
 Alternate Hypothesis (H1): Having meta descriptions matters affects the median number of clicks
