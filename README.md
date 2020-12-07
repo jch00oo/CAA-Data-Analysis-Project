@@ -4,7 +4,7 @@ Our Fall 2020 Data Science Discovery Program research project was conducted unde
 
 This project was created to not only understand the individuals who are subscribed, but also to identify highly-engaged content, grow the size of active subscribers, and sustain overall engagement with the alumni community.
 
-We took various approaches to understand the most active subscribers and the most "attractice" content, which we have outlined below through points, and make suggestions to improve the CAA newsletter.
+We took various approaches to understand the most active subscribers and the most "attractive" content, which we have outlined below through points, and make suggestions to improve the CAA newsletter.
 
 ----
 ## Engagement Among Clickers
@@ -38,7 +38,7 @@ This plot indicates an even higher correlation(=30.8) between the average amount
 
 In the context of the CalCon newsletter, engagement is segmented in three ways:
 1. *Subscribers*: individuals signed up to receive CalCon monthly newsletters
-2. *Openers*: subcribers who have opened an email newsletter
+2. *Openers*: subscribers who have opened an email newsletter
 3. *Clickers*: Openers who have clicked a URL link
 
 The conversion rate between opens to clicks is defined as the number of people who have clicked a link over the number of people who have opened a CalCons newsletter. 
@@ -47,7 +47,7 @@ The overall opens-to-clicks conversion rate is 0.23697, indicating that about 24
 
 ![Screen Shot 2020-12-02 at 11 32 56 PM](https://user-images.githubusercontent.com/70298391/100982807-59080480-34fd-11eb-9ad2-3d60c7ed5967.png)
 
-After conducting a monthly breakdown of the opens-to-clisks conversion rate, it seems that alumni are generally less likely to click on links during the school year months. We hypothesize that the conversion rate was the highest in December 2019 (20%) because Cal won the Big Game that year; conversion rates were low in April 2020 (2%) because of the coronavirus stay-at-home order.
+After conducting a monthly breakdown of the opens-to-clicks conversion rate, it seems that alumni are generally less likely to click on links during the school year months. We hypothesize that the conversion rate was the highest in December 2019 (20%) because Cal won the Big Game that year; conversion rates were low in April 2020 (2%) because of the coronavirus stay-at-home order.
 
 ![Screen Shot 2020-12-02 at 11 47 08 PM](https://user-images.githubusercontent.com/70298391/100982855-69b87a80-34fd-11eb-82a8-85a378199202.png)
 
@@ -55,7 +55,7 @@ Overall, the demographic of CalCon's opener engagers seem to be older, with 30 t
 
 ![Screen Shot 2020-12-03 at 12 27 16 PM](https://user-images.githubusercontent.com/70298391/101084498-e6317480-3562-11eb-8540-c297496f7fba.png)
 
-To further understand clickers engagement, we analzyed the relationship between number of clicks per edition and number of URLs included in each monthly newsletter. We used the code below to extract the total number of links per PDF edition of every monthly CalCons newsletter. [source](https://www.thepythoncode.com/article/extract-pdf-links-with-python)
+To further understand clickers engagement, we analyzed the relationship between number of clicks per edition and number of URLs included in each monthly newsletter. We used the code below to extract the total number of links per PDF edition of every monthly CalCons newsletter. [source](https://www.thepythoncode.com/article/extract-pdf-links-with-python)
 
 ```python
 total_urls = []
@@ -88,7 +88,7 @@ For those whose birth years were not available, we used their graduation year to
 
 After conducting a series of Kruskal-Wallis tests on each age group's alumni event participation rate versus the population's event participation rate, we've concluded that the old age group had significantly higher participation rates compared to the young and mid age groups, participating in alumni events three times as much as the young age group on average.
 
-However, it is equally important to recognize that the number of links clicked and event participation is related to subsciber interests, which we further analyze in the next sections.
+However, it is equally important to recognize that the number of links clicked and event participation is related to subscriber interests, which we further analyze in the next sections.
 
 ---
 ## Student Activity vs Activity Participation Rate
@@ -136,7 +136,7 @@ Alumni from these student activities, on average, participate in alumni events m
 
 ---
 ## Effect of link description on clicks in CalCons Newsletter
-Calcons Newsletters have multiple links in them. While many have a description under their titles, many don't. We found this distribution of descriptions vs no descriptions to be randomly distributed across all CalCon Newsletters and decided to investiagte what it meant on the number of clicks.
+Calcons Newsletters have multiple links in them. While many have a description under their titles, many don't. We found this distribution of descriptions vs no descriptions to be randomly distributed across all CalCon Newsletters and decided to investigate what it meant on the number of clicks.
 
 We made a scraper using Beautiful Soup that can scrape a url to get its title and description.
 ```python
@@ -181,7 +181,7 @@ However, averages are prone to problems due to extremes. So I created a boxplot 
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%2010.02.56%20PM.png" width="350" title="Boxplot of Distributions">
 </p>
 
-Therefore, looking at Median number of clicks per catgeory is better than looking at average. Even by looking at the median, we can see that the links with descriptions had 47.5% more clicks.
+Therefore, looking at Median number of clicks per category is better than looking at average. Even by looking at the median, we can see that the links with descriptions had 47.5% more clicks.
 
 <p align="center">
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.52.44%20PM.png" width="450" title="Median # of clicks per category">
@@ -193,7 +193,7 @@ The barplot shows that 60% of the most clicked links for all top clicks/ newslet
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.58.12%20PM.png" width="350" title="Descriptions in most clicked links per calcons">
 </p>
 
-While we could not make a classifier to see what kinds of content usually has or does not have a description, we looked at the links manually and found there to be not particular genre of content that fell on one catgeory or the other. 
+While we could not make a classifier to see what kinds of content usually has or does not have a description, we looked at the links manually and found there to be not particular genre of content that fell on one category or the other. 
 
 Therefore, we propose a hypothesis that links with descriptions get more clicks. To really prove this from a statistical point, we conducted a Two Value T-test using scipy.
 
@@ -210,7 +210,7 @@ As 0.085 > 0.05, we fail to reject the null hypothesis at the 95% confidence lev
 
 But, if we take 90% confidence interval, then p-value is 0.1 and then we reject the Null Hypothesis in favor of the Alternate Hypothesis
 
-Due to extreme variance of the values in links with decription, we think we get a higher p value. However, we can conclude at a 90% confidence level that there is strong statistical evidence against the Null Hypothesis. Therefore, adding more descriptions to links in newsletters is benefitial and has the ability to increase the median number of clicked links by 47.5%. 
+Due to extreme variance of the values in links with description, we think we get a higher p value. However, we can conclude at a 90% confidence level that there is strong statistical evidence against the Null Hypothesis. Therefore, adding more descriptions to links in newsletters is benefitial and has the ability to increase the median number of clicked links by 47.5%. 
 
 ---
 ## Next Steps
