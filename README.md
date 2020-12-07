@@ -81,8 +81,6 @@ For those whose birth years were not available, we used their graduation year to
 
 After conducting a series of Kruskal-Wallis tests on each age group's alumni event participation rate versus the population's event participation rate, we've concluded that the old age group had significantly higher participation rates compared to the young and mid age groups, participating in alumni events three times as much as the young age group on average.
 
-However, it is equally important to recognize that the number of links clicked and event participation is related to subscriber interests, which we further analyze in the next sections.
-
 ---
 ## Effect of link description on clicks in CalCons Newsletter
 Calcons Newsletters have multiple links in them. While many have a description under their titles, many don't. We found this distribution of descriptions vs no descriptions to be randomly distributed across all CalCon Newsletters and decided to investigate what it meant on the number of clicks.
@@ -124,7 +122,7 @@ However, averages are prone to problems due to extremes. So I created a boxplot 
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%2010.02.56%20PM.png" width="350" title="Boxplot of Distributions">
 </p>
 
-Therefore, looking at Median number of clicks per category is better than looking at average. Even by looking at the median, we can see that the links with descriptions had 47.5% more clicks.
+Even by looking at the median, we can see that the links with descriptions had 47.5% more clicks.
 
 <p align="center">
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.52.44%20PM.png" width="450" title="Median # of clicks per category">
