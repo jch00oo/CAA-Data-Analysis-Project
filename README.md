@@ -2,18 +2,18 @@
 
 Our Fall 2020 Data Science Discovery Program research project was conducted under the guidance of the Cal Alumni Association. Our goal is to understand and analyze subscriber engagement in the past year with the CalCon newsletter, a monthly email newsletter for the UC Berkeley alumni community, in order to present actionable insights.
 
-This project was created to not only understand more about the individuals who are subscribed, but also to identify highly-engaged content, grow the size of active subscribers, and sustain overall engagement with the alumni community.
+This project was created to not only understand the individuals who are subscribed, but also to identify highly-engaged content, grow the size of active subscribers, and sustain overall engagement with the alumni community.
 
 We took various approaches to understand the most active subscribers as well as the most "attractice" content, which we have outlined below through points 1-6.
 
 ## Table of Contents
 
-1. [Understanding CalCon Engagement (10/2019 - 9/2020)](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#understanding-calcon-engagement-102019---92020)
-2. [Opens-to-clicks Conversion Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#opens-to-clicks-conversion-rate)
-3. [Age vs Activity Participation Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#age-vs-activity-participation-rate)
-4. [Student Activity vs Activity Participation Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#student-activity-vs-activity-participation-rate)
-5. [Effect of link description on clicks in CalCons Newsletter](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#effect-of-link-description-on-clicks-in-calcons-newsletter)
-6. [Engagement Among Clickers] 
+1. [Engagement Among Clickers](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#engagement-among-clickers)
+2. [Understanding CalCon Engagement (10/2019 - 9/2020)](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#understanding-calcon-engagement-102019---92020)
+3. [Opens-to-clicks Conversion Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#opens-to-clicks-conversion-rate)
+4. [Age vs Activity Participation Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#age-vs-activity-participation-rate)
+5. [Student Activity vs Activity Participation Rate](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#student-activity-vs-activity-participation-rate)
+6. [Effect of link description on clicks in CalCons Newsletter](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#effect-of-link-description-on-clicks-in-calcons-newsletter)
 7. [Next Steps](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/README.md#next-steps)
 
 ----
@@ -114,8 +114,6 @@ However, it is equally important to recognize that the number of links clicked i
 ---
 ## Age vs Activity Participation Rate
 
-*Add graph/visualization later*
-
 We divided subscribers into three groups -- young, mid, and old -- based the CAA membership type as well as looking at the distribution of ages and dividing them accordingly:
 
 | Group       | Birth year range  |
@@ -174,9 +172,9 @@ Alumni from these student activities, on average, participate in alumni events m
 
 ---
 ## Effect of link description on clicks in CalCons Newsletter
-Calcons Newsletters have multiple links in them. While many have a description under their titles, many don't. I found this distribution of descriptions vs no descriptions to be randomly distributed across all CalCon Newsletters and decided to investiagte what it meant on the number of clicks.
+Calcons Newsletters have multiple links in them. While many have a description under their titles, many don't. We found this distribution of descriptions vs no descriptions to be randomly distributed across all CalCon Newsletters and decided to investiagte what it meant on the number of clicks.
 
-I made a scraper using Beautiful Soup that can scrape a url to get its title and description.
+We made a scraper using Beautiful Soup that can scrape a url to get its title and description.
 ```python
 
 title_names = []
@@ -200,8 +198,6 @@ for i in left_over_links:
         title_names.append(0)
 	print("ERROR")
 ``` 
-
-Here is some initial Exploratory Analysis I conducted that shows that links with descriptions get more more clicks:
 
 Unique links in CalCons in 2019-2020 had 139 links without description and 350 links with a description.
 
@@ -233,15 +229,15 @@ I decided to look at what the most clicked links were per newsletter. These were
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%2010.06.56%20PM.png" width="450" title="top links clicked per newsletter and if they had a description or not">
 </p>
 
-Here is the barplot for the same. It shows that 60% of the most clicked links for all top clicks/ newsletter issue had a description.
+The barplot shows that 60% of the most clicked links for all top clicks/ newsletter issue had a description.
 
 <p align="center">
   <img src="https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/Screen%20Shot%202020-12-04%20at%209.58.12%20PM.png" width="350" title="Descriptions in most clicked links per calcons">
 </p>
 
-While I could not make a classifier to see what kinds of content usually has or does not have a description, I looked at the links manually and found there to be not particular genre of content that fell on one catgeory or the other. 
+While we could not make a classifier to see what kinds of content usually has or does not have a description, we looked at the links manually and found there to be not particular genre of content that fell on one catgeory or the other. 
 
-Therefore, I propose a hypothesis that links with descriptions get more clicks. To really prove this from a statistical point, I conducted a Two Value T-test using scipy.
+Therefore, we propose a hypothesis that links with descriptions get more clicks. To really prove this from a statistical point, we conducted a Two Value T-test using scipy.
 
 Null Hypothesis (H0): Having meta descriptions does not affect median number of clicks
 Alternate Hypothesis (H1): Having meta descriptions matters affects the median number of clicks
@@ -260,7 +256,7 @@ As 0.085 > 0.05, we fail to reject the null hypothesis at the 95% confidence lev
 
 But, if we take 90% confidence interval, then p-value is 0.1 and then we reject the Null Hypothesis in favor of the Alternate Hypothesis
 
-Due to extreme variance of the values in links with decription, I think we get a higher p value. However, we can conclude at a 90% confidence level that there is strong statistical evidence against the Null Hypothesis. Therefore, adding more descriptions to links in newsletters is benefitial and has the ability to increase the median number of clicked links by 47.5%. 
+Due to extreme variance of the values in links with decription, we think we get a higher p value. However, we can conclude at a 90% confidence level that there is strong statistical evidence against the Null Hypothesis. Therefore, adding more descriptions to links in newsletters is benefitial and has the ability to increase the median number of clicked links by 47.5%. 
 
 ---
 ## Next Steps
@@ -268,7 +264,6 @@ Due to extreme variance of the values in links with decription, I think we get a
 From the insights we have extracted through our analysis, we have made the following suggestions to CAA in order to optimize their content to increase their subscribers' engagement:
 * Appeal to older alumni by curating content for them and trying to get more senior subscribers as they are much more likely to participate in events and donate
 * Write a description under every link as it has the potential to increase the probability of that link being clicked.
-* 
 
 However, there is still analysis left to do to solidify our findings and identify more areas for improvement:
 * Conduct NLP analysis on the "Feature Benefits" sections of each newsletter
