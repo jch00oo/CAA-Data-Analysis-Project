@@ -23,11 +23,11 @@ We can see that the average number of alumni activity participation of repeat cl
 
 ![3](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/3.png)
 
-Same indication appears for repeat clickers. We can see that improving the clickers’ performance on engaging with the CalCon newsletters can increase their performance on the alumni activity participation.
+The regression plot, We can see that improving the clickers’ performance on engaging with the CalCon newsletters can increase their performance on the alumni activity participation.
 
 ![4](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/4.png)
 
-This plot also indicates a positive correlation between the average amount of gift and the number of clicks of repeat clickers than that of all clickers.
+This plot also indicates a positive correlation between the average amount of gift and the number of clicks of repeat clickers.
 
 ---
 ## Opens-to-clicks Conversion Rate
