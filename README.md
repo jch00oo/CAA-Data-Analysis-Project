@@ -23,7 +23,7 @@ We can see that the average number of alumni activity participation of repeat cl
 
 ![3](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/3.png)
 
-The regression plot, We can see that improving the clickers’ performance on engaging with the CalCon newsletters can increase their performance on the alumni activity participation.
+The regression plot implies that improving the clickers’ performance on engaging with the CalCon newsletters can increase their performance on the alumni activity participation.
 
 ![4](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/4.png)
 
