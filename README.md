@@ -27,7 +27,7 @@ Same indication appears for repeat clickers. We can see that improving the click
 
 ![4](https://github.com/jch00oo/CAA-Data-Analysis-Project/blob/main/4.png)
 
-This plot indicates an even higher correlation(=30.8) between the average amount of gift and the number of clicks of repeat clickers than that of all clickers.
+This plot indicates an even higher correlation between the average amount of gift and the number of clicks of repeat clickers than that of all clickers.
 
 ---
 ## Opens-to-clicks Conversion Rate
