@@ -80,6 +80,56 @@ For those whose birth years were not available, I used their graduation year to 
 After conducting a series of Kruskal-Wallis tests on each age group's alumni event participation rate versus the population's event participation rate, I've concluded that the old age group had significantly higher participation rates compared to the young and mid age groups, participating in alumni events three times as much as the young age group on average.
 
 ---
+## Activity vs Student Activity
+Another factor I took into account was the subscriber's activity/affiliation while a student. After grouping alumni event participation counts by Student Activity, I compared the average participation rate within each Student Activity to the population's participation rate to determine whether subscribers within certain Student Activities had significantly higher participation rates.
+
+```python
+
+stud_acts_list = act_studActCount['student_activity_desc'].tolist()
+sig_results = list()
+
+for i in stud_acts_list:
+  curr = stud_act_actCount.loc[stud_act_actCount['student_activity_desc'] == i]
+  list1 = curr['counts']
+  x, p_val = stats.kruskal(list1, stud_act_actCount['counts'])
+  sig_results.append(p_val)
+  
+#use 5% significance, compare and yes (if smaller than 5%) / no
+to_add = list()
+
+for j in sig_results:
+  if j <= 0.05:
+    to_add.append('yes')
+  else:
+    to_add.append('no')
+    
+to_add_sig = pd.Series(to_add)
+act_studActCount['significance'] = to_add_sig.values
+
+mean_diff_acts = list()
+for i in stud_acts_list:
+  curr1 = stud_act_actCount.loc[stud_act_actCount['student_activity_desc'] == i]
+  counts_mean = curr1['counts'].mean()
+  mean_diff_acts.append(counts_mean)
+  
+#compare means to overall mean
+to_add2 = list()
+overall_acts_counts_mean = stud_act_actCount['counts'].mean()
+
+for j in mean_diff_acts:
+  if j <= overall_acts_counts_mean:
+    to_add2.append('greater')
+  else:
+    to_add2.append('less')
+    
+to_add_diff2 = pd.Series(to_add2)
+act_studActCount['greater or less mean?'] = to_add_diff2.values
+
+sig_stud_act = act_studActCount.loc[(act_studActCount['significance'] == 'yes') & (act_studActCount['greater or less mean?'] == 'greater')]
+
+``` 
+
+---
 ## Effect of link description on clicks in CalCons Newsletter
 Calcons Newsletters have multiple links in them. While many have a description under their titles, many don't. I found this distribution of descriptions vs no descriptions to be randomly distributed across all CalCon Newsletters and decided to investigate what it meant on the number of clicks.
 
